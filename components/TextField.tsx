@@ -19,7 +19,7 @@ const TextField = ({ label, isRequired, ...props }: Props): JSX.Element => {
     <FormControl id={props.name} isInvalid={invalid} isRequired={isRequired}>
       <FormLabel htmlFor={props.name}>{label}</FormLabel>
       <Input {...field} type={props.type} />
-      <FormErrorMessage></FormErrorMessage>
+      <FormErrorMessage>{meta.error}</FormErrorMessage>
     </FormControl>
   );
 };

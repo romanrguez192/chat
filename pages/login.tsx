@@ -1,6 +1,5 @@
 import {
   Center,
-  Stack,
   Heading,
   Text,
   Box,
@@ -14,7 +13,7 @@ import LoginForm from "@components/LoginForm";
 const Login: NextPage = () => {
   const bg = useColorModeValue("gray.100", "inherit");
   const cardBg = useColorModeValue("white", "gray.700");
-  const signupColor = useColorModeValue("teal.500", "teal.100");
+  const linkColor = useColorModeValue("teal.500", "teal.100");
 
   return (
     <Center minH="100vh" bg={[cardBg, bg]}>
@@ -26,7 +25,7 @@ const Login: NextPage = () => {
         <Text as="span" fontWeight="medium">
           {"Don't have an account? "}
           <Link href="/signup" passHref>
-            <ChakraLink color={signupColor}>Click here!</ChakraLink>
+            <ChakraLink color={linkColor}>Click here!</ChakraLink>
           </Link>
         </Text>
       </Box>
