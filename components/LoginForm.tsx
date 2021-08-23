@@ -1,5 +1,6 @@
 import { Form, Formik } from "formik";
 import TextField from "@components/TextField";
+import PasswordField from "@components/PasswordField";
 import { Button, Stack } from "@chakra-ui/react";
 import { object, string } from "yup";
 
@@ -27,7 +28,7 @@ const LoginForm = (): JSX.Element => {
         <Form>
           <Stack my={10} spacing={5}>
             <TextField label="Email" name="email" type="email" />
-            <TextField label="Password" name="password" type="password" />
+            <PasswordField label="Password" name="password" />
             <Button
               type="submit"
               colorScheme="teal"

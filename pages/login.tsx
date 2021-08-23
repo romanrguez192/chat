@@ -9,6 +9,7 @@ import {
 import type { NextPage } from "next";
 import Link from "next/link";
 import LoginForm from "@components/LoginForm";
+import Meta from "@components/Meta"
 
 const Login: NextPage = () => {
   const bg = useColorModeValue("gray.100", "inherit");
@@ -16,6 +17,8 @@ const Login: NextPage = () => {
   const linkColor = useColorModeValue("teal.500", "teal.100");
 
   return (
+    <>
+    <Meta title="Sign in" />
     <Center minH="100vh" bg={[cardBg, bg]}>
       <Box bg={cardBg} p={12} boxShadow={[0, "lg"]} rounded={[0, "lg"]}>
         <Heading as="h1" textAlign="center" fontWeight="extrabold">
@@ -30,6 +33,8 @@ const Login: NextPage = () => {
         </Text>
       </Box>
     </Center>
+    </>
+    
   );
 };
 
