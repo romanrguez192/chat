@@ -13,7 +13,7 @@ const LoginForm = (): JSX.Element => {
           <Stack my={10} spacing={5}>
             <TextField label="Email" name="email" type="email" />
             <TextField label="Password" name="password" type="password" />
-            <Button type="submit" colorScheme="blue" isLoading={isSubmitting}>
+            <Button type="submit" colorScheme="teal" isLoading={isSubmitting}>
               Sign in
             </Button>
           </Stack>
