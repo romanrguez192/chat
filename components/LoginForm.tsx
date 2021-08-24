@@ -26,7 +26,7 @@ const LoginForm = (): JSX.Element => {
     >
       {({ isSubmitting }) => (
         <Form>
-          <Stack my={10} spacing={5}>
+          <Stack my={6} spacing={3}>
             <TextField label="Email" name="email" type="email" />
             <PasswordField label="Password" name="password" />
             <Button

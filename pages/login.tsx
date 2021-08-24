@@ -5,6 +5,7 @@ import {
   Box,
   Link as ChakraLink,
   useColorModeValue,
+  Stack,
 } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import Link from "next/link";
@@ -20,18 +21,18 @@ const Login: NextPage = () => {
     <>
     <Meta title="Sign in" />
     <Center minH="100vh" bg={[cardBg, bg]}>
-      <Box bg={cardBg} p={12} boxShadow={[0, "lg"]} rounded={[0, "lg"]}>
+      <Stack bg={cardBg} p={12} boxShadow={[0, "lg"]} rounded={[0, "lg"]}>
         <Heading as="h1" textAlign="center" fontWeight="extrabold">
           Sign in
         </Heading>
         <LoginForm />
-        <Text as="span" fontWeight="medium">
+        <Text as="span" align="center" fontWeight="medium">
           {"Don't have an account? "}
           <Link href="/signup" passHref>
-            <ChakraLink color={linkColor}>Click here!</ChakraLink>
+            <ChakraLink color={linkColor}>Sign up!</ChakraLink>
           </Link>
         </Text>
-      </Box>
+      </Stack>
     </Center>
     </>
     
