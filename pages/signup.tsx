@@ -3,12 +3,11 @@ import {
   Heading,
   Text,
   Box,
-  Link as ChakraLink,
   useColorModeValue,
   Stack,
 } from "@chakra-ui/react";
 import type { NextPage } from "next";
-import Link from "next/link";
+import Link from "@components/Link";
 import SignupForm from "@components/SignupForm";
 import Meta from "@components/Meta";
 
@@ -28,8 +27,8 @@ const Signup: NextPage = () => {
           <SignupForm />
           <Text as="span" align="center" fontWeight="medium">
             {"Already have an account? "}
-            <Link href="/login" passHref>
-              <ChakraLink color={linkColor}>Sign in!</ChakraLink>
+            <Link href="/signup" color={linkColor}>
+              Sign in!
             </Link>
           </Text>
         </Stack>
